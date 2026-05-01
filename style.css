@@ -14,7 +14,7 @@
 }
 
 body{
-    background: linear-gradient(rgba(236, 233, 239, 0.513) 50%, rgba(57, 11, 100, 0.228) 100%),  url(./assets/img-main/paws-main.png);
+    background: linear-gradient(rgba(236, 233, 239, 0.513) 50%, rgba(57, 11, 100, 0.228) 100%),  url(./assets/img-main/paws-img-main.png);
     background-attachment: fixed;
 }
 
@@ -24,14 +24,17 @@ body{
 .container-portada {
     height: 55px;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.box-logo img {
-    width: 50px;
-    height: 50px;
+.box-logo {
+    display: flex;
+}
+
+.container-portada img {
+    width: 80px;
+    height: 65px;
 }
 
 /* probar cómo queda el nav sin background white, aplicando background transparent y fuente color blanca.
@@ -39,32 +42,32 @@ no me convence el fondo blanco del nav*/
 
 .hero {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
 }
 
 nav ul {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    padding-right: 30px;
+    gap: 25px;
     font-weight: bold;
 }
 
 /* probar sin border o cambiar el color*/
 a{
+    font-size: 13px;
     background-color: whitesmoke;
-    border: 2px solid rgba(98, 14, 134, 0.514);
-    color: #551A8B;
-    padding: 5px;
+    border: 2px solid ;
+    color: black;
+    padding: 8px;
     border-radius: 20px;
 }
 
 /* sin el border queda mejor estéticamente*/
 a:hover {
-    /*border: 2px solid;*/
+    border: 2px solid;
     background-color: white;
-    color: #f15ad3;
+    color: #641c34;
 }
 
 .box-portada {
@@ -76,7 +79,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(43, 13, 67, 0.631) 33%, rgba(57, 11, 100, 0.412) 100%), url('./assets/img-header/portada.jpg');
+    background: linear-gradient(90deg,#641c3497 13%, rgba(43, 43, 43, 0.66) 99%), url('./assets/img-header/portada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,11 +108,17 @@ a:hover {
 }
 
 
-/* section refugio  ////aplicar flex direction column de 0 a 1024px */
+/* section refugio  ////aplicar flex direction column de 0 a 1024px - hecho para todos los formartos
+
+APLICAR PADDING TOP PARA SEPARAR MÁS LA IMG DE LA PORTADA - hecho
+*/
 
 .container-shelter-req{
+    width: 100%;
     display: flex;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px;
     gap: 40px;
 }
 
@@ -119,6 +128,7 @@ a:hover {
 }
 
 .box-shelter-txt{
+    width: 800px;
     display: flex;
     align-items: center;
     background-color: rgba(247, 247, 247, 0.904);
@@ -147,23 +157,25 @@ a:hover {
 }
 
 .box-cat-txt h2{
-    font-size: 30px;
-    color: #551A8B;
+    font-size: 45px;
+    -webkit-text-stroke: 0.5px #641c34;
+    color: white;
+    text-shadow: 3px 4px 10px white;
     font-family: 'Hi Lea', sans-serif;
     letter-spacing: 2px;
-    padding-top: 10px;
+    padding: 0 15px 15px;
 }
 
 .box-cat-txt h4{
     font-size: 19px;
-    padding: 10px 60px 60px;
+    /* padding: 10px 60px 60px; */
     padding-bottom: 20px;
 }
 
 .box-cat-img{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px 100px;
+    gap: 35px 100px;
     padding: 20px;
 }
 
@@ -174,7 +186,7 @@ a:hover {
 }
 
 .box-cat-img div{
-    width: 200px;
+    width: 225px;
     height: auto;
 }
 
@@ -184,10 +196,23 @@ a:hover {
 }
 
 .card-cat{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     background-color: #fff;
-    padding: 10px;
+    gap: 5px;
+    padding: 5px;
     border-radius: 8px;
 }
+
+/* .box-btn-card{
+    display: flex;
+    flex-direction: column ;
+} */
+
+/*.btn-card{
+    padding: 3px;
+}*/
 
 
 .title-requirements{
