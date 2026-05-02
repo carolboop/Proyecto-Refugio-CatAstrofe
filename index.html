@@ -85,7 +85,7 @@
                         es dulce y tranquilo, ideal para quienes buscan un compañero mimoso. Disfruta de los
                         momentos de calma y de estar acompañado. Está vacunado y desparasitado, preparado para formar
                         parte de una familia responsable.</p>
-                        <button class="btn-card">Adoptar</button>
+                    <button class="btn-card">Adoptar</button>
                 </div>
                 <div class="card-cat">
                     <img src="./assets/baby-cat/3.jpg" alt="gatita tricolor">
@@ -93,7 +93,7 @@
                         es una pequeñita muy tierna y observadora, con una mirada que enamora. Es juguetona pero
                         también le encanta recibir caricias. Se encuentra vacunada y desparasitada, lista para ir a su
                         nuevo hogar.</p>
-                        <button class="btn-card">Adoptar</button>
+                    <button class="btn-card">Adoptar</button>
                 </div>
                 <div class="card-cat">
                     <img src="./assets/baby-cat/4.jpg" alt="gatito jugando en el pasto">
@@ -101,7 +101,7 @@
                         es un gatito lleno de energía, súper juguetón y divertido. Le encanta correr, saltar y
                         descubrir cosas nuevas. Está vacunado y desparasitado, esperando una familia que lo acompañe en
                         todas sus aventuras.</p>
-                        <button class="btn-card">Adoptar</button>
+                    <button class="btn-card">Adoptar</button>
                 </div>
                 <div class="card-cat">
                     <img src="./assets/baby-cat/5.jpg" alt="gatito bebé relajado en la cama">
@@ -109,7 +109,7 @@
                         es cariñoso y compañero, siempre buscando mimos y atención. Tiene un carácter muy dulce y
                         se adapta fácilmente. Se encuentra vacunado y desparasitado, listo para recibir todo el amor de
                         su nueva familia.</p>
-                        <button class="btn-card">Adoptar</button>
+                    <button class="btn-card">Adoptar</button>
                 </div>
                 <div class="card-cat">
                     <img src="./assets/baby-cat/6.jpg" alt="gatita bebé con su juguete">
@@ -218,38 +218,47 @@
                     pre adopción.</p>
             </div>
         </section>
-        <section>
-            <form action="">
+        <section class="form-container">
+            <form class="box-form" action="">
+                <h2 class="title-requirements">
+                    Formulario pre-adopción
+                </h2>
                 <label for="name">
                     Nombre completo:
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                 </label>
                 <label for="age">
                     Edad:
-                    <input type="number" name="age" min="18" max="70">
+                    <input type="number" name="age" min="18" max="70" required>
                 </label>
-                <label for="adress">
+                <label for="adress" aria-required="true">
                     <p>Vivís en</p>
                     CABA
                     <input type="checkbox" name="checkbox">
                     GBA
                     <input type="checkbox" name="checkbox">
                 </label>
+                <label for="text">
+                    Quiero adoptar a:
+                    <input type="text" required>
+                </label>
+                <label for="email">
+                    E-mail:
+                    <input type="email" name="email" required>
+                </label>
+                <button type="submit">Enviar</button>
             </form>
         </section>
-        <br />
-        <br />
-        <br />
-
-        <!-- <footer>
-            <div>
+        <footer class="container-final">
+            <div class="box-final">
                 <p>
                     Cat Astrofe Adopciones © 2026. Hecho con
-                    <img src="./assets/img-main/heart-regular.png" alt="logo-corazon-rojo" style="width: 20px; height: 20px" />
+                    <img src="./assets/img-main/heart-regular.png" alt="logo-corazon-rojo"
+                        style="width: 20px; height: 20px" />
                     by a catlover.
                 </p>
             </div>
-        </footer> -->
+        </footer>
     </main>
 </body>
 
